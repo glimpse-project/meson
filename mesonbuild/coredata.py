@@ -26,7 +26,7 @@ import ast
 import argparse
 import configparser
 
-version = '0.49.999'
+version = '0.49.999.glimpse'
 backendlist = ['ninja', 'vs', 'vs2010', 'vs2015', 'vs2017', 'xcode']
 
 default_yielding = False
