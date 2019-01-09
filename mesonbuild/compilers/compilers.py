@@ -1067,7 +1067,7 @@ class Compiler:
 
     def get_cross_extra_flags(self, environment, link):
         extra_flags = []
-        if self.is_cross and environment:
+        if getattr(self, 'is_cross', False) and environment:
             props = environment.properties.host
             extra_flags += props.get_external_args(self.language)
             if link:
